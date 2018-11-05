@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <form method='POST' action=''>
+    <div class ="jumpotron text-center">
+      <h1> . easter egg. . </h1>
+      <h1>File Operations</h1>
+      <p class="lead">Let the games begin...</p>
+    </div>
+    <div class="row">
+      <input placeholder='Node Serial' name='id'>
+      <input placeholder='Node Designation' name='designa'>
+      <input placeholder='Node Description' name='descrip'>
+      <input type='submit' value='Add Node' name='action'>
+      <input type='submit' value='Delete Local Data' name='action'>
+      <input type='submit' value='mySQL upload' name='action'>
+    </div>
+    <div class="row"> <p>-------------------</p></div>
+    <div class="row">
+      <div class="jumpotron text">
+        <p>Field Test Status: {{ field }}</p>
+      </div>
+      <input type='submit' value='enable/disable' name='action'>
+    </div>
+  </form>
+{% endblock %}

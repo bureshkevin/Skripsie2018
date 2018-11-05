@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <form method='POST' action=''>
+    <div class ="jumpotron text-center">
+      <h1> . easter egg. . </h1>
+      <h1>File Operations</h1>
+      <p class="lead">Let the games begin...</p>
+    </div>
+    <div class="row">
+      <input type='submit' value='Display Data' name='action'>
+      <input type='submit' value='Download Devices' name='action'>
+      <input type='submit' value='Download Data' name='action'>
+    </div>
+    <div class="row">
+      <input placeholder='Node ID' name='id'>
+      <input placeholder='Type of test' name='msg'>
+      <input type='submit' value='Test Node' name='action'>
+    </div>
+  </form>
+  <table>
+    {% for item in data %}
+       <tr>
+         <td>{{ item[0] }}</td>
+         <td>{{ item[1] }}</td>
+         <td>{{ item[2] }}</td>
+         <td>{{ item[3] }}</td>
+       </tr>
+    {% endfor %}  
+  </table>
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LoRa GUI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Mission Control</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="/setup">Setup</a></li>
+            <li class="nav-item"><a class="nav-link" href="/file">File</a></li>
+	  </ul>
+        </div>
+      </nav>
+    <div class= "container">
+     
+  <form method='POST' action=''>
+    <div class ="jumpotron text-center">
+      <h1> . easter egg. . </h1>
+      <h1>Setup Operations</h1>
+      <p class="lead"></p>
+    </div>
+    <div class="row">
+      <input placeholder='Node Serial' name='id'>
+      <input placeholder='Node Designation' name='designa'>
+      <input placeholder='Node Description' name='descrip'>
+      <input type='submit' value='Add Node' name='action'>
+	</div>
+	<div class="row">
+      <input type='submit' value='Clear Local Database' name='action'>
+      <input type='submit' value='MySQL upload' name='action'>
+    </div>
+    <div class="row"> <p>         </p></div>
+    <div class="row">
+	  <input type='submit' value='enable/disable' name='action'>
+      <div class="jumpotron text">
+        <h5>Field Test Status: Off</h5>
+      </div>
+    </div>
+  </form>
+
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </body>
+</html>
